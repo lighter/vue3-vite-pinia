@@ -1,0 +1,7 @@
+<div v-for="task in tasks" :key="task.id">
+    <div :class="{ completed: task.done }">
+        <span>{{ task.description }}</span>
+        <span @click.stop="doneTask(task.id)">&#10004;</span>
+        <span @click.stop="deleteTask(task.id)">&#10060;</span>
+    </div>
+</div>
