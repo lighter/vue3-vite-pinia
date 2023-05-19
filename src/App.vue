@@ -4,7 +4,7 @@
       <router-link :to="{ name: 'ListTodo' }">ListTodo</router-link> |
       <router-link :to="{ name: 'AddTodo' }">AddTodo</router-link> |
       <router-link :to="{ name: 'Slot' }">Slot</router-link> |
-      <router-link :to="{ name: 'ScopedSlot' }">Scoped Slot</router-link>
+      <router-link :to="{ name: 'MyStoreTest' }">MyStoreTest</router-link>
     </div>
     <router-view />
   </div>

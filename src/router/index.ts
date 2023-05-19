@@ -19,9 +19,9 @@ const routes: Array<RouteRecordRaw> = [
         component: () => import("@/components/SlotSample/Slot1.vue")
     },
     {
-        path: "/scoped-slot",
-        name: "ScopedSlot",
-        component: () => import("@/components/SlotSample2/ScopedSlot1.vue")
+        path: "/my-store-test",
+        name: "MyStoreTest",
+        component: () => import("@/components/myStoreTest/myStoreTest.vue")
     }
 ];
 
