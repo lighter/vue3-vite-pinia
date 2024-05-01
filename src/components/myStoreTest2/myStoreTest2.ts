@@ -2,7 +2,10 @@ import { ref, defineComponent, watch} from "vue";
 import { useMyStore } from "@/store/myStore";
 
 export default defineComponent({
-    setup() {
+    props: {
+        message: String
+    },
+    setup(props) {
         const store = useMyStore();
         const count = ref(store.count);
 

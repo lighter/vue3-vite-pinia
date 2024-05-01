@@ -8,7 +8,8 @@
       <input type="radio" :id="area" :value="area" v-model="chosenArea">
       <label :for="area"> {{ area }} </label>
     </div>
-    <slot2>
+    <button @click="testClick">test click</button>
+    <slot2 :message="testMessage">
       <!--      父層決定要插入哪個子層  -->
       <template v-slot:[chosenArea]>
         <span>1.我現在在： {{ chosenArea }}</span>
@@ -35,9 +36,14 @@ export default ({
   setup() {
     const chosenArea = ref('red');
     const areas = ref(["red", "black", "blue", "aa"]);
+    const testMessage = ref('');
+
+    const testClick = () => {
+      testMessage.value = 'test' + Math.random();
+    }
 
     return {
-      chosenArea, areas
+      testClick, chosenArea, areas, testMessage
     }
   }
 })

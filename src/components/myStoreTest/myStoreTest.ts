@@ -7,10 +7,12 @@ export default defineComponent({
         myStoreTest2
     },
     setup() {
-        const store = useMyStore();
-        const count = ref(store.count);
+        const store = useMyStore()
+        const count = ref(store.count)
+        const testMessage = ref('')
         const increment = () => {
             store.count++;
+            testMessage.value = 'count is ' + store.count;
         };
 
         watch(
@@ -19,6 +21,6 @@ export default defineComponent({
             count.value = newCount;
         });
 
-        return { count, increment };
+        return { count, testMessage, increment };
     }
 })

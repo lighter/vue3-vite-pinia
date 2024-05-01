@@ -23,15 +23,5 @@ export default({
 </script>
 
 <style scoped>
-.red {
-  color: red;
-}
 
-.black {
-  color: black;
-}
-
-.blue {
-  color: blue;
-}
 </style>

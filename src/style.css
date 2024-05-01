@@ -79,3 +79,15 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.red {
+  color: red;
+}
+
+.black {
+  color: black;
+}
+
+.blue {
+  color: blue;
+}
